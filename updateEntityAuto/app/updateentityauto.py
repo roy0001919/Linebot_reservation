@@ -55,7 +55,7 @@ class Config(object):
 def personalinfo_creat_entity(entity_id, key, value):
     import dialogflow_v2 as dialogflow
     import os
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "app/static/-660c1a8bd25d.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
     entity_type_UUID = entity_id
     entity_type_client = dialogflow.EntityTypesClient()
     parent = entity_type_client.entity_type_path("", entity_type_UUID)
@@ -74,7 +74,7 @@ def personalinfo_creat_entity(entity_id, key, value):
 def dialogflow_creat_entity(entity_id, key, value):
     import dialogflow_v2 as dialogflow
     import os
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "app/static/-2915db2b9d5e.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "" 
     entity_type_UUID = entity_id
     entity_type_client = dialogflow.EntityTypesClient()
     parent = entity_type_client.entity_type_path("", entity_type_UUID)
