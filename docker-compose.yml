@@ -64,4 +64,4 @@ services:
     #nginx is listening on port 80 and will proxy
     #the request to flask container @ 8080
     ports:
-      ["5000:80"]
+      ["80:80"]
